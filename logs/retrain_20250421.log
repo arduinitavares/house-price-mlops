@@ -1,4 +1,0 @@
-📊 Drift threshold configurado: 0.5
-📊 Drift detectado: 0.0488 (4/82 features)
-📊 Threshold para retreino: 0.2
-✅ No significant drift detected. Retraining not needed.

@@ -1,7 +1,0 @@
-📥 Lendo dados de referência de: data/processed/train_data.csv
-   → shape (2344, 82)
-📥 Lendo dados de produção de: data/processed/test_data.csv
-   → shape (586, 82)
-⚙️ Gerando relatório de Data Drift...
-✅ Relatório JSON salvo em: reports/data_drift_report.json
-📊 Drift detectado: 0.0488 (4/82 features)
