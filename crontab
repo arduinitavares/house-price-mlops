@@ -1,0 +1,7 @@
+# Run drift detection and model retraining check daily at 2 AM
+0 2 * * * /bin/bash -c "cd /app && python src/monitoring/generate_drift_report.py && python src/monitoring/auto_retrain.py >> /app/logs/scheduled_run_$(date '+\%Y\%m\%d').log 2>&1"
+
+# Keep the logs from getting too large (keep last 30 days)
+0 0 * * * find /app/logs -type f -name "*.log" -mtime +30 -delete
+
+# Empty line at end of file is required for crontab
