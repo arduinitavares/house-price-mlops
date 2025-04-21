@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-04-21 20:34:58.271663",
+  "reference_shape": [
+    2344,
+    82
+  ],
+  "production_shape": [
+    586,
+    82
+  ],
+  "metrics": [
+    {
+      "type": "DataDriftPreset",
+      "config": {
+        "drift_share": 0.5,
+        "threshold": null,
+        "columns": null
+      },
+      "results": {
+        "drift_share_config": 0.5,
+        "features_drifted": 4,
+        "features_analyzed": 82,
+        "drift_share_detected": 0.04878048780487805,
+        "drifted_features": [
+          {
+            "name": "Overall Qual",
+            "p_value": 0.005612743646474282,
+            "stat": 0.07892491467576791
+          },
+          {
+            "name": "Year Built",
+            "p_value": 0.0043430910326430145,
+            "stat": 0.08063139931740615
+          },
+          {
+            "name": "SalePrice",
+            "p_value": 0.027451280294829558,
+            "stat": 0.0674061433447099
+          },
+          {
+            "name": "Garage Yr Blt",
+            "p_value": 0.0018808577914854918,
+            "stat": 0.08848015949135897
+          }
+        ]
+      }
+    }
+  ]
+}
