@@ -124,7 +124,7 @@ def generate_drift_report(
     result_dict["metrics"].append(metric_info)
 
     # Salva o relatório no formato JSON
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(result_dict, f, indent=2)
     print(f"✅ Relatório JSON salvo em: {output_path}")
     print(
