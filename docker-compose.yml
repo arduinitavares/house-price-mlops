@@ -1,0 +1,21 @@
+services:
+  model-monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile.monitor
+    container_name: house-price-model-monitor
+    volumes:
+      # Mount these volumes to persist data between container restarts
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./mlruns:/app/mlruns
+    restart: unless-stopped
+    environment:
+      - MLFLOW_TRACKING_URI=file:///app/mlruns
+      # Configure to your specific environment needs
+      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      # - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+    # By default, run with cron enabled
+    command: run-with-cron
