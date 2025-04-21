@@ -18,6 +18,7 @@ fastapi = "^0.115.12"
 uvicorn = "^0.34.2"
 evidently = "^0.7.1"
 pylint = "^3.3.6"
+tabulate = "^0.9.0"
 
 
 [build-system]
