@@ -39,3 +39,6 @@ reports/
 .vscode/
 *.swp
 *.swo
+
+# add csv files
+*.csv
