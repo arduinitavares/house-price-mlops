@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/alexandrearduinitavares/projects/house-price-mlops/mlruns/330848658664964622/673361f259d44733b52881dd0a0c30cc/artifacts
+end_time: 1745261050576
+entry_point_name: ''
+experiment_id: '330848658664964622'
+lifecycle_stage: active
+run_id: 673361f259d44733b52881dd0a0c30cc
+run_name: RandomForest
+run_uuid: 673361f259d44733b52881dd0a0c30cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745261040744
+status: 3
+tags: []
+user_id: alexandrearduinitavares
